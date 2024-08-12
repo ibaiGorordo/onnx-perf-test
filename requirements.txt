@@ -1,0 +1,2 @@
+onnxruntime-gpu
+pandas

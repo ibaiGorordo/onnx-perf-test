@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onnx-perf-test"
+version = "0.1.0"
+description = "A simple tool to measure the performance of ONNX models in Python."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Ibai Gorordo"}
+]
+dependencies = [
+    "onnxruntime-gpu",
+    "pandas",
+    "argparse",
+    "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+include = ["onnx_perf_test"]
+
+[project.scripts]
+onnx-perf-test = "onnx_perf_test.onnx_perf_test:main"
+analyze-onnx-profile = "onnx_perf_test.analyze_onnx_profile:main"
+
+[project.urls]
+Homepage = "https://github.com/ibaiGorordo/onnx-perf-test"
