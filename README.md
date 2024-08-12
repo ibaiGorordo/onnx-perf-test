@@ -1,5 +1,6 @@
-# onnx-perf-test - ONNX Performance Test
-A simple tool to measure the performance of ONNX models in Python.
+# onnx-perf-test - ONNX Performance Test [![PyPI](https://img.shields.io/pypi/v/onnx-perf-test?color=2BAF2B)](https://pypi.org/project/onnx-perf-test/)
+
+A simple Python tool to measure the performance of ONNX models.
 ![onnx_perf_test_results](https://github.com/user-attachments/assets/760f4f1f-9955-4430-bcaf-4780d57770b6)
 
 ## Installation
