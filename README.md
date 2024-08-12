@@ -9,6 +9,8 @@ A simple Python tool to measure the performance of ONNX models.
 pip install onnx-perf-test
 ```
 
+- onnxruntime is installed with the package, for other execution providers, make sure to install the appropriate version of onnxruntime.
+
 ## Usage
 
 ```
