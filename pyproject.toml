@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "onnx-perf-test"
-version = "0.3.0"
+version = "0.4.0"
 description = "A simple tool to measure the performance of ONNX models in Python."
 readme = "README.md"
 license = {text = "MIT"}
@@ -22,8 +22,8 @@ dependencies = [
 include = ["onnx_perf_test"]
 
 [project.scripts]
-onnx-perf-test = "onnx_perf_test.onnx_perf_test:main"
-analyze-onnx-profile = "onnx_perf_test.analyze_onnx_profile:main"
+onnx_perf_test = "onnx_perf_test.onnx_perf_test:main"
+analyze_onnx_profile = "onnx_perf_test.analyze_onnx_profile:main"
 
 [project.urls]
 Homepage = "https://github.com/ibaiGorordo/onnx-perf-test"
