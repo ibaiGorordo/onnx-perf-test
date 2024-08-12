@@ -12,7 +12,7 @@ authors = [
     {name = "Ibai Gorordo"}
 ]
 dependencies = [
-    "onnxruntime-gpu",
+    "onnxruntime",
     "pandas",
     "argparse",
     "matplotlib"
