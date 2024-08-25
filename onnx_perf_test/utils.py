@@ -51,7 +51,7 @@ def create_test_inputs(session: onnxruntime.InferenceSession) -> dict[str, np.nd
     input_info = session.get_inputs()
     inputs = {}
     for input in input_info:
-        inputs[input.name] = np.random.rand(*input.shape).astype(tensor_dtype_to_np_dtype(input.type))
+        inputs[input.name] = np.array(np.random.rand(*input.shape)).astype(tensor_dtype_to_np_dtype(input.type))
 
     return inputs
 
