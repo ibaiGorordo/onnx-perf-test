@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "onnx-perf-test"
-version = "0.6.0"
+version = "0.7.0"
 description = "A simple tool to measure the performance of ONNX models in Python."
 readme = "README.md"
 license = {text = "MIT"}
@@ -12,10 +12,12 @@ authors = [
     {name = "Ibai Gorordo"}
 ]
 dependencies = [
-    "onnxruntime",
     "pandas",
     "argparse",
-    "matplotlib"
+    "matplotlib",
+    "onnxruntime==1.18.0; sys_platform == 'darwin' and platform_machine != 'arm64'",
+    "onnxruntime-silicon==1.16.3; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "onnxruntime-gpu==1.18.0; sys_platform != 'darwin'"
 ]
 
 [tool.setuptools.packages.find]
